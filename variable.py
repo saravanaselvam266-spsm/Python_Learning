@@ -1,2 +1,7 @@
-for i in range(1,5):
-    print(i)
+ 
+a = 50
+print(a)
+b = "Hello World"
+print(b)
+c = True
+print(c)
