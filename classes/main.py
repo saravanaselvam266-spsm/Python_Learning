@@ -66,3 +66,35 @@ Available copies: 2
 Book borrowed: Harry Potter
 Available copies: 1
 Book not available!'''
+
+class LibraryBook:
+    # Constructor
+    def __init__(self, title, author,available_copies):
+        self.title = title
+        self.author = author
+        self.available_copies = available_copies
+
+    # Methods
+    def borrow_book(self,borrow):
+        if borrow > self.available_copies:
+            print(f"Book not available! I have only:{self.available_copies} copies")
+        else:
+            self.available_copies -= borrow
+            print(f"title: {self.title} name: {self.author} borrow: {borrow} total: {self.available_copies}")
+
+    def return_book(self,returns):
+        self.available_copies += returns
+        print(f"title: {self.title} name: {self.author} returns: {returns} total: {self.available_copies}")
+
+    def show_status(self):
+        print(f"title: {self.title} author: {self.author} available_copies: {self.available_copies}")
+
+
+
+bb1 = LibraryBook('three friends','kamalesh',3)
+bb2 = LibraryBook('Tiger' , 'yashika' , 4)
+bb1.borrow_book(5)
+bb1.return_book(1)
+bb1.show_status()
+
+
