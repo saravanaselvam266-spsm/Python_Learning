@@ -35,8 +35,14 @@ Output: [3,11,4,6,9,2]'''
 
 def is_find(a,k):
     tag = k
-    result = []
+    result=[]
+    b=result[-tag:]
+    for i in range(0,len(a)-k):
+        result=b
+        result.append(a[i])
+    print(result)
 
+is_find([4,6,9,2,3,11],2)
 
 
 
@@ -121,4 +127,46 @@ def is_find(num):
 is_find([5, 2, 3, 5, 7, 5, 8])
 
 #------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
