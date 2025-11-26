@@ -16,12 +16,17 @@ def is_anagram(x,y):
     for i in x:
         if i in y :
             a+=i
+        else: 
+            print("Not Anagram")
+            return
     if len(a) == len(y):
         print("Anagram")
     else:
         print("Not Anagram")
         
 is_anagram("listen","silent")
+is_anagram("liisten","siilent")
+is_anagram("pool","loop")
 
 #----------------------------------------------------
 
