@@ -10,27 +10,22 @@ def is_long_vowels(sentence):
     if len(sentence) == 0 :
         print("Invalid")
     else:
-        result = sentence.split()
-        print(result)
-        count = 0 
-        res = []
-        max = 0
-        for word in result:
+        words = sentence.split()
+        vowels = "aeiou"
+        max_vowels = ""
+        for word in words:
+            count = 0
             for ch in word:
-                if ch in "aeiouAEIOU":
+                if ch in vowels:
                     count += 1
-            res.append(count)
-        for i in range(0,len(res),1):
-            if res(i) > max:
-                num = i
-        print(sentence(num))
+                    max_vowels = word
+        print(max_vowels)
+                
+
+        
+        
 
 is_long_vowels("Learning Python is interesting")
 
-            
-      
-
-
-
-is_long_vowels("Learning Python is interesting")
+    
         
