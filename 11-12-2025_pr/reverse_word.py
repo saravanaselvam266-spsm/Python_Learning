@@ -18,8 +18,10 @@ def is_reverse(sen):
     print(result)
 
     for el in result:
+        temp = ""
         for j in range(len(el)-1,-1,-1):
-            sentence +=el[j] + " "
+            temp +=el[j] 
+        sentence += temp + " "
 
     print(sentence)
 

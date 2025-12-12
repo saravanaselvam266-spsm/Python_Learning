@@ -21,16 +21,18 @@ def count_pairs(num):
     print(even_num + odd_num)
 
 
-# count_pairs([1, 2, 3, 4, 5])
+count_pairs([1, 2, 3, 4, 5])
 
 
+
+ # option 
+ 
 def count_pairs_new(num):
     count = 0
     for el in num :
         for j in range(el+1,len(num),1):
-            if el + num[j] % 2 == 0:
+            if (el + num[j]) % 2 == 0:
                 count += 1
-        print(num[j])
     print(count)
 
 count_pairs_new([1, 2, 3, 4, 5])

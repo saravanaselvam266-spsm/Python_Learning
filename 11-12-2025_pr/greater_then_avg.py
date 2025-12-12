@@ -16,5 +16,3 @@ def is_avg_greater(num):
     print(count)
 
 is_avg_greater([4, 8, 1, 9, 3, 10, 5])
-
-    

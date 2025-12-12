@@ -6,8 +6,18 @@ Output → 1, 2, 4
 
 
 def is_duplicate_only(num):
-    result = num
+    result = ""
+    count = 0
     for i in range(0,len(num),1):
-        print(num[i],"->",num.count(num[i]))
+        for j in range(i + 1,len(num),1):
+            if num[i] == num[j]:
+                count += 1
+            if count > 0 :
+                count = 0
+                if str(num[i]) not in result :
+                    result += str(num[i]) +" "
+            
+
+    print(result)
 
 is_duplicate_only([1,4,2,7,4,1,8,2,2])

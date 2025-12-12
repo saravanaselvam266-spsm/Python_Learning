@@ -8,7 +8,16 @@ def is_rotate(num):
         result.append(num[i])
     print(result)        
         
-
-
-
 is_rotate([1,2,3,4,5]) 
+
+def is_new_rotate(num):
+    result = num[-1:]
+    # print(result)
+    temp = num[0:-1]
+    # print(temp)
+    print(result + temp)
+
+
+is_new_rotate([1,2,3,4,5])
+
+

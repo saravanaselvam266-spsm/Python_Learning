@@ -51,5 +51,5 @@ def count_cart(cart):
         print(mug + shirt + pen + jean)
 
 
-count_cart(["M 3", "J 1", "T 2"])
+count_cart(["M 3", "J 1", "T 2","M 5"])
 count_cart(["P 5", "M 1"])
